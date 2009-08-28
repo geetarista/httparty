@@ -45,8 +45,7 @@ module HTTParty
         http = Net::HTTP.new(uri.host, uri.port, options[:http_proxyaddr], options[:http_proxyport])
         http.use_ssl = (uri.port == 443)
         http.verify_mode = OpenSSL::SSL::VERIFY_NONE
-        http.open_timeout = http.read_timeout = options[:timeout].to_i if options[:timeout].to_i > 0
-        http        
+        http
       end
 
       def body
