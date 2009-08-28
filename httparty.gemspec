@@ -38,3 +38,4 @@ Gem::Specification.new do |s|
     s.add_dependency(%q<echoe>, [">= 0"])
   end
 end
+
